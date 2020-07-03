@@ -1,24 +1,17 @@
 # epubs
 
-## Project setup
-```
-npm install
-```
+## 概要
+epub形式のリーダーwebアプリです。
+https://www.kyoge.xyz
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+機能は以下の通りです。
+- 一覧機能
+- epub閲覧機能
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 使用技術(フロントエンド)
+- 言語: TypeScript
+- ライブラリ: Vue.js
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## その他
+- vue/cli3 使用
+- バックエンド https://github.com/kyogen-hekii/epub-backend
