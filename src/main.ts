@@ -1,9 +1,13 @@
 import Vue from 'vue';
+import axios from 'axios';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
 
-Vue.config.productionTip = false;
+axios.defaults.baseURL = process.env.VUE_APP_API_URL;
+Vue.prototype.$axios = axios;
+
+// Vue.config.productionTip = false;
 
 new Vue({
   router,

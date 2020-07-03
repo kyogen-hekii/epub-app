@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '../views/Home/Home.vue';
+import Viewer from '../views/Viewer/Viewer.vue';
 import DummyPage from '../dev/DummyPage.vue';
 
 Vue.use(VueRouter);
@@ -20,6 +21,11 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
+    path: '/viewer/:id',
+    name: 'Viewer',
+    component: Viewer,
+  },
+  {
     path: '/dummy',
     name: 'Dummy',
     component: DummyPage,
@@ -27,7 +33,7 @@ const routes: Array<RouteConfig> = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.BASE_URL,
   routes,
 });
