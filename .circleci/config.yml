@@ -40,7 +40,7 @@ jobs:
           command: API_ID=$API_ID API_TOKEN=$API_TOKEN npm run build
       - aws-s3/sync:
           from: dist
-          to: s3://mybucket/dist
+          to: s3://vue-epubs
           overwrite: true
 
 workflows:
