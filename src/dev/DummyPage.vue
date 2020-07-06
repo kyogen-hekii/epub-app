@@ -1,5 +1,5 @@
 <template>
-  <span>dummy</span>
+  <span>dummy page</span>
 </template>
 
 <script>
